@@ -1,6 +1,6 @@
 # docker-openai-agent-python
 
-This repository provides a Docker Compose setup for running an OpenAI Agents Python environment. The setup supports VNC connections, allowing users to control the container with graphics.
+This repository provides a Docker Compose setup for running an [openai-agents-python](https://github.com/openai/openai-agents-python) environment. The setup supports VNC connections, allowing users to control the container with graphics.
 
 ## Features
 Docker Compose setup for easy management.
@@ -29,6 +29,7 @@ VNC connection enabled to control the container graphically.
     ```
 
 4. Access with VNC (if needed) 
+
     Connect to the container using a VNC client to control it graphically.Openai-agents-python environment over docker.
     It also capable of VNC connection so that we can control the container with graphics.
 
