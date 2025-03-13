@@ -1,0 +1,16 @@
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args: 
+        - AGENT_VNCPW=${AGENT_VNCPW}
+    environment:
+      TZ: ${TIMEZONE}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    container_name: openai-agent-python
+    ports:
+      - "5902:5902"
+    tty: true
+    stdin_open: true
+    restart: always
